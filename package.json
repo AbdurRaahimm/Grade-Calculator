@@ -1,7 +1,9 @@
 {
   "name": "react-vite-tailwind-starter",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A starter template for React 18 + Vite 4 + Tailwind CSS 3",
+  "author": "rahim123",
+  "license": "MIT",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -25,5 +27,11 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
-  }
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "tailwindcss",
+    "starter"
+  ]
 }
