@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   const menuItems = [
+    { name: 'CGPA', link: '/cgpa' },
     { name: 'GPA', link: '/' },
-    { name: 'CGPA', link: '/cgpa' }
 
   ]
   return (
@@ -15,8 +15,8 @@ export default function Navbar() {
           {
             menuItems.map((item, index) => (
               <li key={index}>
-                <NavLink to={item.link} style={({isActive})=>{
-                  return isActive ? {color: 'red'} : {color: 'white'}
+                <NavLink to={item.link} style={({ isActive }) => {
+                  return isActive ? { color: 'red' } : { color: 'white' }
                 }} className='text-white'>{item.name}</NavLink>
               </li>
             ))

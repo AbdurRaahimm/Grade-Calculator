@@ -102,7 +102,7 @@ export default function CGPA() {
         <div key={semester.id} className="p-6 bg-white rounded-lg shadow-md max-w-3xl mx-auto my-5">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-semibold text-primary">Semester {semester.id}</h2>
-            <button onClick={() => handleDeleteSemester(semester.id)} className="text-red-600 border rounded-full w-6 h-6 text-center ">&times;</button>
+            <button onClick={() => handleDeleteSemester(semester.id)} className="text-red-600 border border-blue-600 rounded-full w-6 h-6 text-center ">&times;</button>
           </div>
           <div className="space-y-4">
             {semester.subjects.map((subject, subjectIndex) => (
@@ -138,7 +138,7 @@ export default function CGPA() {
                   onChange={(e) => handleChange(semester.id, subjectIndex, e)}
                   className="col-span-3 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
-                <button onClick={() => handleDeleteSubject(semester.id, subjectIndex)} className="col-span-1  text-red-600 border rounded-full w-6 h-6 text-center ">&times;</button>
+                <button onClick={() => handleDeleteSubject(semester.id, subjectIndex)} className="col-span-1  text-red-600 border border-blue-600 rounded-full w-6 h-6 text-center ">&times;</button>
               </div>
             ))}
             <div className="flex justify-between items-center mt-6">
