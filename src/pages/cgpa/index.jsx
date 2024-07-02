@@ -154,7 +154,7 @@ export default function CGPA() {
       ))}
 
       <div className="flex justify-around items-center py-5">
-        <button onClick={handleAddSemester} className="px-4 py-2 rounded-md border">ADD NEXT SEMESTER</button>
+        <button onClick={handleAddSemester} className="px-4 py-2 rounded-md border bg-white shadow-sm">ADD NEXT SEMESTER</button>
         <div>
           <span className="font-semibold text-primary">Your CGPA:</span>
           <span className="font-bold text-secondary"> {calculateCGPA().toFixed(2)}</span>
